@@ -19,12 +19,12 @@ public class GameThread extends Thread {
         while (running) {
             game.update();
             try {
-                Thread.sleep(20);
+                Thread.sleep(25);
             } catch (InterruptedException e) {
                 return;
             }
             if (listener != null)
-                listener.actionPerformed(new ActionEvent(this, 0, "Repaint/KeyListener"));
+                listener.actionPerformed(new ActionEvent(this, 0, "Repaint/KeyListener/MouseListener"));
         }
     }
 }

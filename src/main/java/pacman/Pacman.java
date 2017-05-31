@@ -141,7 +141,7 @@ public class Pacman {
         }
         //счет
         g.setColor(Color.white);
-        g.setFont(new Font("arial", Font.PLAIN, 15));
+        g.setFont(new Font("Minecraft", Font.PLAIN, 20));
         g.drawString("Score: " + Integer.toString(score), 10, 550);
         //жизы
         switch (health) {
@@ -163,4 +163,6 @@ public class Pacman {
     public Move getPacman() {
         return pacman;
     }
+
+    public int getScore() { return score; }
 }

@@ -10,6 +10,7 @@ public class GameLoop extends JPanel {
     public GameLoop(Game game) {
         this.game = game;
         new GameThread(game, e -> {
+            addMouseListener(game);
             addKeyListener(game);
             requestFocus();
             repaint();
